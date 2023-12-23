@@ -5,18 +5,13 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section className='container flex items-center justify-center flex-col'>
-            <div className="text-center">
-                <div className="flex flex-col items-center">
-                    <Image
-                        src="/images/mh-light-logo.gif"
-                        alt="mh animated logo"
-                        width={300}
-                        height={100}
-                    />
+        <section className='container items-center'>
+            <div className="flex-col text-center justify-center">
+                <div className="flex justify-center">
+                    <Image src="/images/mh-light-logo.gif" alt="mh animated logo" width={300} height={100} />
                 </div>
                 <h1 className="text-black mb-4 text-4xl lg:text-6xl font-extrabold">Hello There, My name is Michael and I am a:</h1>
-                <div className="m-3 mt-7">
+                <div className="m-3 mt-7" style={{ minHeight: '5em' }}>
                     <TypeAnimation
                         sequence={[
                             "Certified Full Stack Developer...",
@@ -43,7 +38,10 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-            <h2 className="text-black mt-5 text-3xl lg:text-5xl text-center">Check out SOME of my work below!</h2>
+            <div className='p-0 m-0 flex flex-col items-center lg:flex-row lg:justify-center space-x-2 mt-6 font-extrabold sm:text-1xl text-4xl lg:text-5xl outline-double shadow-2xl custom-glow'>
+                <h2 className="text-black m-0 p-0">Take A Peek At My</h2>
+                <h2 className="text-[#2d90eb] m-0 p-0">Work Below</h2>
+            </div>
         </section>
     )
 }
