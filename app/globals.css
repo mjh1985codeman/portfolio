@@ -23,3 +23,14 @@ body {
   background: linear-gradient(202deg, rgba(239, 239, 239, 1) 0%, rgba(239, 239, 239, 1) 52%, rgba(68, 68, 68, 1) 88%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efefef", endColorstr="#444444", GradientType=1);
 }
+
+/* Typing animation things: */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

@@ -1,31 +1,49 @@
+'use client'
 import React from 'react'
 import Image from "next/image";
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section>
-            <div className="grid grid-cols-1 lg:grid-cols=12">
-                <div className="col-span-7 place-self-center">
-                    <Image src="/images/mh-light-logo.gif"
+        <section className='container flex items-center justify-center flex-col'>
+            <div className="text-center">
+                <div className="flex flex-col items-center">
+                    <Image
+                        src="/images/mh-light-logo.gif"
                         alt="mh animated logo"
-                        width={250}
-                        height={100}>
-                    </Image>
-                    <h1 className="text-black mb-4 text-4xl lg:text-6xl font-extrabold">Michael Hodges Dev Portfolio</h1>
+                        width={300}
+                        height={100}
+                    />
                 </div>
-                <div className="col-span-5">
-                    <p className="text-[#505559] text-lg lg:text-xl">Seasoned Full Stack Developer that specializes in Javscript based technologies such as React, Next.js and Node.js.  Experiences include:</p>
-                    <ul className="list-disc text-[#505559] my-4 pl-6">
-                        <li className="mb-2">Building Multiple Javascript powered Full Stack Applications.</li>
-                        <li className="mb-2">Building Node based Express powered Server API's; Both multi-route REST based and Document/Query based such as GraphQL.</li>
-                        <li>Navigating, correcting and refactoring horrendous legacy code where I learned the importance of sound Development Principles and proper Documentation Procedures.</li>
-                        <li>Product Support Engineer for a Large Payment Processor as part of an Agile Dev Team.</li>
-                        <li>TA in the Full Stack Coding department of a global online learning platform that was founded by Harvard and MIT; edX.</li>
-                        <li>AWS Certified.</li>
-                    </ul>
-                    <h2 className="text-black mb-4 text-3xl lg:text-5xl font-extrabold">Check out SOME of my work below!</h2>
+                <h1 className="text-black mb-4 text-4xl lg:text-6xl font-extrabold">Hello There, My name is Michael and I am a:</h1>
+                <div className="m-3 mt-7">
+                    <TypeAnimation
+                        sequence={[
+                            "Certified Full Stack Developer...",
+                            1750,
+                            "Mobile Developer...",
+                            1750,
+                            "UX/UI Developer...",
+                            1750,
+                            "Node API Builder and Debugger...",
+                            1750,
+                            "Logo Designer...",
+                            1750,
+                            "Experienced Problem Solver in a Corporate Agile Dev Environment...",
+                            1750,
+                            "Coding Coach for other aspiring developers...",
+                            1750,
+                            'Novice Disc Golf Player ;)',
+                            1750,
+                        ]}
+                        wrapper="span"
+                        speed={60}
+                        className="text-[#474747] text-3xl lg:text-4xl font-extrabold font-serif"
+                        repeat={Infinity}
+                    />
                 </div>
             </div>
+            <h2 className="text-black mt-5 text-3xl lg:text-5xl text-center">Check out SOME of my work below!</h2>
         </section>
     )
 }
