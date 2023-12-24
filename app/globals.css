@@ -24,19 +24,34 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efefef", endColorstr="#444444", GradientType=1);
 }
 
-@keyframes glow {
 
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 #2d90eb, 0 0 0 0 rgba(45, 144, 235, 0);
-  }
+/* border animation things */
+.animated-border-div {
+  /* Border properties */
+  --g: 4px;
+  --b: 4px;
+  --c: #2d90eb;
 
-  50% {
-    box-shadow: 0 0 15px 5px #2d90eb, 0 0 10px 5px rgba(45, 144, 235, 0.5);
-  }
+  padding: 10px;
+
+  /* Gradient properties */
+  --_c: #ffffff00 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+
+  /* Background properties using gradients with rotation effect */
+  background:
+    var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+    var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+
+  /* Background size for animated effect */
+  background-size: 200% var(--b), var(--b) 200%;
+
+  /* Transition properties for smooth animation */
+  transition: 5s;
 }
 
-.custom-glow {
-  animation: glow 2s;
-  animation-iteration-count: 3;
+.animated-border-div:hover {
+  /* Adjusted position for hover state */
+  --_p: 70%;
 }

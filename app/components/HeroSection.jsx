@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section className='container items-center'>
+        <section className='flex flex-col items-center'>
             <div className="flex-col text-center justify-center">
                 <div className="flex justify-center">
                     <Image src="/images/mh-light-logo.gif" alt="mh animated logo" width={300} height={100} />
@@ -38,9 +38,10 @@ const HeroSection = () => {
                     />
                 </div>
             </div>
-            <div className='p-0 m-0 flex flex-col items-center lg:flex-row lg:justify-center space-x-2 mt-6 font-extrabold sm:text-1xl text-4xl lg:text-5xl outline-double shadow-2xl custom-glow'>
+            <div className='max-w-fit flex flex-col items-center lg:flex-row lg:justify-center space-x-2 mt-6 font-extrabold sm:text-1xl text-4xl lg:text-5xl animated-border-div'>
                 <h2 className="text-black m-0 p-0">Take A Peek At My</h2>
-                <h2 className="text-[#2d90eb] m-0 p-0">Work Below</h2>
+                <div className="custom-glow"></div>
+                <h2 className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-slate-800 to-[#2d90eb] m-0 p-0">Work Below</h2>
             </div>
         </section>
     )
