@@ -55,7 +55,6 @@ body {
 .animated-border-div:hover {
   /* Adjusted position for hover state */
   --_p: 70%;
-  box-shadow: rgba(245, 0, 0);
 }
 
 .projectSectionDiv {
@@ -68,7 +67,7 @@ body {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 0px;
   margin-top: 12px;
 }
@@ -77,9 +76,9 @@ body {
 /* Initial styling for hidden elements */
 .hidden {
   opacity: 0;
-  filter: blur(10px);
+  filter: blur(20px);
   transform: translateX(-100%);
-  transition: all 3.5s;
+  transition: all 3s;
 }
 
 /* Styling for visible elements */

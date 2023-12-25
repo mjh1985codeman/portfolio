@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect } from 'react';
+import Image from "next/image";
 
 function ProjectSection() {
     useEffect(() => {
@@ -15,13 +16,18 @@ function ProjectSection() {
 
         const hiddenElements = document.querySelectorAll('.hidden');
         hiddenElements.forEach((el) => observer.observe(el));
+
+        return () => {
+            observer.disconnect();
+        };
     }, []);
     return (
         <>
-            <div className='projectSectionDiv text-[#d8d8d8] text-3xl lg:text-4xl font-extrabold font-serif"'>
+            <div className='projectSectionDiv text-[#d8d8d8] font-serif"'>
                 <section className='hidden'>
-                    <h2>Project One</h2>
-                    <p>Brief Description here.</p>
+                    <h2 className='text-3xl lg:text-4xl font-extrabold'>Project One</h2>
+                    <p className='flex flex-col items-center m-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores tenetur nisi voluptas at similique labore, adipisci soluta molestias eius ab enim id sed ratione culpa ducimus ipsam hic consequatur?</p>
+                    <Image src="/images/timber-prop-ss.png" alt="timber properties project" width={300} height={300} />
                 </section>
                 <section className='hidden'>
                     <h2>Project Two</h2>
