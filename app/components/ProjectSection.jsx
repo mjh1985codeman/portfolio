@@ -25,9 +25,11 @@ function ProjectSection() {
         <>
             <div className='projectSectionDiv text-[#d8d8d8] font-serif"'>
                 <section className='hidden'>
-                    <h2 className='text-3xl lg:text-4xl font-extrabold'>Project One</h2>
-                    <p className='flex flex-col items-center m-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolores tenetur nisi voluptas at similique labore, adipisci soluta molestias eius ab enim id sed ratione culpa ducimus ipsam hic consequatur?</p>
-                    <Image src="/images/timber-prop-ss.png" alt="timber properties project" width={300} height={300} />
+                    <h2 className="text-3xl lg:text-4xl font-extrabold rounded-lg border-2 cst-border-color p-2">Timber Properties</h2>
+                    <p className='flex flex-col items-center m-12 text-xl'>This is a Full Stack (MERN) application I built where a rental property owner (and their staff) can host their various properties so that potential renters can review and reserve their properties.</p>
+                    <a href="https://timber-properties.netlify.app/">
+                        <Image src="/images/timber-prop-ss.png" alt="timber properties project" width={300} height={300} className='cst-border-color' />
+                    </a>
                 </section>
                 <section className='hidden'>
                     <h2>Project Two</h2>
