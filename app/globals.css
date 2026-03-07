@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero section animations */
+.hero-fade-in {
+  opacity: 1;
+  animation: heroFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll indicator bounce */
+.scroll-indicator {
+  width: 24px;
+  height: 24px;
+  border-right: 2px solid #2d90eb;
+  border-bottom: 2px solid #2d90eb;
+  transform: rotate(45deg);
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(8px);
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -70,12 +110,15 @@ body {
 
 .projectSectionDiv {
   background-color: #000000;
-  background: url('../public/images/blkbg.jpg') no-repeat center center fixed;
+  background: url('/images/blkbg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: 48px;
+  margin-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
   border-top: solid 2px var(--blue-color);
 }
 
@@ -84,21 +127,30 @@ body {
   place-items: center;
   align-content: center;
   min-height: 80vh;
-  padding: 0px;
-  margin-top: 12px;
+  padding: 2rem;
+  margin: 12px auto 0;
+  max-width: 900px;
+  background: rgba(30, 35, 45, 0.85);
+  border-radius: 1rem;
+  border: 1px solid rgba(45, 144, 235, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .projectSectionDiv h2 {
   background-color: #383737e0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 /* Project Section Scroll Animation things */
 /* Initial styling for hidden elements */
 .hidden {
   opacity: 0;
-  filter: blur(20px);
-  transform: translateX(-100%);
-  transition: all 3s;
+  filter: blur(10px);
+  transform: translateX(-40px);
+  transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    filter 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Styling for visible elements */
@@ -106,6 +158,22 @@ body {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+/* Navbar: ensure desktop links are visible above 768px */
+@media (min-width: 768px) {
+  .navbar-desktop-links {
+    display: flex !important;
+  }
+  .navbar-mobile-toggle,
+  .navbar-mobile-menu {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-desktop-links {
+    display: none !important;
+  }
 }
 
 /* Custom Scroll Bar Things.  */
