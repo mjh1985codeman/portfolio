@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../portfolio-projects/calorie-counter"
+		},
+		{
+			"path": "../../../../portfolio-projects/holiday-chaos-coordinator"
+		},
+		{
+			"path": "../../../../portfolio-projects/LOTR-RPG"
+		},
+		{
+			"path": "../../../../portfolio-projects/mh-snake-game"
+		},
+		{
+			"path": "../../../../portfolio-projects/timber-properties-client"
+		},
+		{
+			"path": "../../../../portfolio-projects/timber-ranch"
+		}
+	],
+	"settings": {}
+}
