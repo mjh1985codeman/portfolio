@@ -54,6 +54,7 @@ function ProjectSection() {
             title: 'Holiday Chaos Coordinator',
             description: 'A holiday gift list organizer built with the MERN stack and GraphQL. Users can create gift lists, add recipients, and search for products via the eBay Browse API. Features JWT authentication, a responsive UI with Material UI and Bootstrap, and a full GraphQL schema with Apollo Client.',
             tech: ['React', 'Node.js', 'Express', 'MongoDB', 'GraphQL', 'eBay API', 'MUI'],
+            liveUrl: 'https://holiday-chaos-coordinator-production.up.railway.app/',
             repoUrl: 'https://github.com/mjh1985codeman/holiday-chaos-coordinator',
         },
         {
