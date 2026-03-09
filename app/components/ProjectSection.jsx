@@ -56,6 +56,7 @@ function ProjectSection() {
             tech: ['React', 'Node.js', 'Express', 'MongoDB', 'GraphQL', 'eBay API', 'MUI'],
             liveUrl: 'https://holiday-chaos-coordinator-production.up.railway.app/',
             repoUrl: 'https://github.com/mjh1985codeman/holiday-chaos-coordinator',
+            image: '/images/Holiday-Chaos-ss.png',
         },
         {
             title: 'LOTR RPG',
