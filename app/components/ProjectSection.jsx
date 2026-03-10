@@ -67,12 +67,6 @@ function ProjectSection() {
             image: '/images/LOTR-SS.png',
         },
         {
-            title: 'Snake Game',
-            description: 'The classic Snake game reimagined with vanilla JavaScript and ES modules. Features a clean modular architecture (separate modules for snake, food, grid, and input), a start screen, live score tracking, and a game-over modal. No frameworks or bundlers — just pure JS.',
-            tech: ['JavaScript', 'HTML5', 'CSS3', 'ES Modules'],
-            repoUrl: 'https://github.com/mjh1985codeman/mh-snake-game',
-        },
-        {
             title: 'Calorie Counter',
             description: 'A straightforward calorie tracking app. Set your profile and the Mifflin-St Jeor equation calculates your daily target based on age, weight, height, activity level, and goal (lose, maintain, or gain). Log calories with a quick-add input that instantly shows how many you have left for the day, and review your history over time.',
             tech: ['React', 'Vite', 'Node.js', 'Express', 'PostgreSQL', 'JWT'],
