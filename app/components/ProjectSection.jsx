@@ -74,8 +74,10 @@ function ProjectSection() {
         },
         {
             title: 'Calorie Counter',
-            description: 'A full-stack calorie tracking application with user authentication. Built with a React + Vite frontend and an Express API backed by PostgreSQL. Features JWT auth with httpOnly cookies, bcrypt password hashing, and a TypeScript migration in progress on the server.',
+            description: 'A straightforward calorie tracking app. Set your profile and the Mifflin-St Jeor equation calculates your daily target based on age, weight, height, activity level, and goal (lose, maintain, or gain). Log calories with a quick-add input that instantly shows how many you have left for the day, and review your history over time.',
             tech: ['React', 'Vite', 'Node.js', 'Express', 'PostgreSQL', 'JWT'],
+            image: '/images/Calorie-Counter-SS.png',
+            liveUrl: 'https://calorie-counter-production-36b5.up.railway.app/',
             repoUrl: 'https://github.com/mjh1985codeman/calorie-counter',
         },
     ];
