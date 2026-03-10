@@ -62,7 +62,9 @@ function ProjectSection() {
             title: 'LOTR RPG',
             description: 'A text-based choose-your-own-adventure game set in Middle-earth. Players create a character, choose a role (Hobbit, Wizard, Elf, Dwarf, or Human), and navigate through ~20 branching scenarios. Wrong choices cost health points, and final scores land on a persistent leaderboard.',
             tech: ['Node.js', 'Express', 'MySQL', 'Sequelize', 'Handlebars', 'Howler.js'],
+            liveUrl: 'https://lotr-rpg-production.up.railway.app/',
             repoUrl: 'https://github.com/mjh1985codeman/LOTR-RPG',
+            image: '/images/LOTR-SS.png',
         },
         {
             title: 'Snake Game',
