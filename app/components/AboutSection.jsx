@@ -21,7 +21,7 @@ const AboutSection = () => {
           About Me
         </h2>
         <p className="text-slate-200 text-lg leading-relaxed">
-          Married dad by night, developer by day—I build web apps and APIs in FinTech and have my sights set on becoming a Systems Architect. When I&apos;m not at the keyboard, you&apos;ll find me cheering for Nashville SC or chasing discs in the woods.
+          Married dad by night, multi-year experienced FinTech developer by day. When I'm not at the keyboard, you'll find me enjoying the great outdoors, cooking, reading up on the latest tech trends or tapping into my creative side through music.
         </p>
         <div className="mt-4 mb-6" style={{ minHeight: '2.5em' }} aria-live="polite">
           <span className="text-slate-200 text-base sm:text-lg">I am a </span>
